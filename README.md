@@ -5,8 +5,9 @@ MarkLogic semantics tutorial.
 
 It is a super quick-and-dirty MarkLogic application.
 
-It uses a single HTML file, tutorial.html, and an OOTB MarkLogic REST server
-on port 8000. Data will be loaded into the Documents database.
+It uses a single HTML file, tutorial.html, and a MarkLogic REST server
+on port 8010. Data will be loaded into a semantics-tutorial-content database,
+built by the setup script.
 
 #requires
 
@@ -29,14 +30,7 @@ setup.bat
 
 After this, you can look at the application at
 
-http://localhost:8000/v1/resources/htmlServer?rs:home={path-to-tutorial}
-
-{path-to-tutorial} is the path to this directory on your computer.  Use forward
-slashes for the path, even on Windows.  example:
-"/home/cgreer/semantics-tutorial" or "C:/semantics-tutorial"
-
-Note: If you are on Windows, keep the path short, as the command for MLCP will
-be too long if you have deeply nested directory.
+http://localhost:8010/tutorial.html
 
 # Query Console
 
