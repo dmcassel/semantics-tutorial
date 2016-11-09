@@ -1,0 +1,9 @@
+{
+    "rest-api": {
+        "name": "semantics-tutorial",
+        "database": "semantics-tutorial-content",
+        "modules-database": "semantics-tutorial-modules",
+        "port": "8010",
+        "forests-per-host": 3
+    }
+}

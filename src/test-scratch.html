@@ -18,11 +18,11 @@
     * controller for executing query
     */
     angular.module('semantics', []).controller('queryCtrl', ['$scope', '$http', function($scope, $http){
-    		
+
     		$scope.query = 'chuck';
             $scope.result = '{"no":"RESULT"}';
     		$scope.submit = function() {
-    			$http.get('http://localhost:8000/v1/resources/testScratch?rs:subject='+$scope.query).success(function(response) {
+    			$http.get('/v1/resources/testScratch?rs:subject='+$scope.query).success(function(response) {
                     console.log(response);
     				$scope.result = JSON.stringify(response, null, 2)
     			}).error(function(error) {
